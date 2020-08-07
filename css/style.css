@@ -1,0 +1,103 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: #B91450;
+  color: inherit;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* mix */
+.container{
+  max-width: 1280px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+h1, h2{
+  color: #fff;
+  background-color: inherit;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.btn{
+  color: #B91450;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 3px;
+  background-color: yellow;
+  border-radius: 5px;
+  border: 1px solid #999;
+  cursor: pointer;
+  margin: 10px 10px 0 10px;
+}
+.btn:hover{
+  background-color: grey;
+  color: #fff;
+}
+.row{
+  display: flex;
+  justify-content:center;
+
+}
+.col{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 20px;
+}
+
+/* dati imput */
+.dati-imput{
+  background-color: #fff;
+  color: inherit;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #333;
+  padding: 20px;
+  margin: 20px 0;
+}
+label{
+  color: #B91450;
+  background-color: inherit;
+  margin-bottom: 15px;
+}
+input, select{
+  text-align: center;
+  border-radius: 5px;
+  height: 30px;
+  border: 1px solid #B91450;
+}
+input::placeholder{
+  text-align: center;
+  font-size: 15px;
+}
+
+input:focus, select:focus{
+  color: white;
+  background-color: #B91450;
+  border:1px solid black;
+}
+
+.biglietto-container{
+  color: inherit;
+  background-color: white;
+  display: none;
+
+}
+.show{
+  display: block;
+}
+.dati-biglietto{
+  display: flex;
+}
+
+.nome-biglietto{
+  padding: 10px;
+  flex-shrink: 0;
+  background-color: grey;
+  color: inherit;
+}

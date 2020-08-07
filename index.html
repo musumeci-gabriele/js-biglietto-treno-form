@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- favicon -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/fs.png">
+    <title>FS/Biglietto</title>
+
+  </head>
+
+  <body>
+    <!-- FOGLIO DEL BIGLIETTO -->
+    <div class="container">
+
+      <!-- TITOLO -->
+      <h1>Calcola il prezzo del tuo biglietto</h1>
+      <!-- //TITOLO -->
+
+      <!-- BOX DATI CLIENTE -->
+      <div class="form-container">
+
+        <div class="dati-imput">
+
+          <div class="row">
+
+            <div class="col">
+              <label for="nome">Nome e cognome</label>
+              <input id="nome" type="number" placeholder="Inserisci il tuo nome">
+            </div>
+            <div class="col">
+              <label for="km">km da percorrere</label>
+              <input id="km" type="text" placeholder="Inserisci i km">
+            </div>
+            <div class="col">
+              <label id="Fascia-eta">fascia di eta'</label>
+              <select id="fascia-eta" name="fascia-eta">
+                <option value="minorenne">minorenne</option>
+                <option value="maggiorenne">maggiorenne</option>
+                <option value="Over 65">Over 65</option>
+              </select>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- BOTTONI  -->
+        <div class="row">
+          <button id="genera" class="btn" type="button" name="genera">Genera</button>
+          <button id="annulla" class="btn" type="button" name="annulla">Annulla</button>
+        </div>
+        <!-- // BOTTONI  -->
+
+        <!-- STAMPA DEL BIGLIETTO -->
+        <h2>il tuo biglietto</h2>
+        <div id="biglietto-container" class="biglietto-container show">
+          <h3>dettaglio oasseggeri</h3>
+          <div class="nome-biglietto">
+            <h3>nome passeggero</h3>
+            <h4 id="nome-passeggero"></h4>
+          </div>
+
+          <!-- TABELLA DATI BIT -->
+          <div class="offerta-biglietto">
+            <table>
+              <thead>
+                <tr>
+                  <th>offerta</th>
+                  <th>carrozza</th>
+                  <th>codice cp</th>
+                  <th>costo biglietto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="offerta"></td>
+                  <td id="carrozza"></td>
+                  <td id="codice-cp"></td>
+                  <td id="costo"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- //TABELLA DATI BIT -->
+
+        </div>
+      </div>
+      <!-- //BOX DATI CLIENTE -->
+
+    </div>
+    <!-- //FOGLIO DEL BIGLIETTO -->
+
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
