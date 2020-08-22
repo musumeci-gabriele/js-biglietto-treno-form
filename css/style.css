@@ -52,7 +52,7 @@ h1, h2{
 }
 
 /* dati imput */
-.data-input{
+.data-input, .biglietto-container{
   background-color: white;
   color: inherit;
   border-radius: 10px;
@@ -84,12 +84,6 @@ input:focus, select:focus{
 /* STAMPA BIGLIETTO */
 .biglietto{
   margin-top: 20px;
-}
-.biglietto-container{
-  color: inherit;
-  background-color: white;
-  padding: 20px;
-  display: none;
 }
 
 
