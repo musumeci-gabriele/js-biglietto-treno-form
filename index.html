@@ -19,76 +19,95 @@
       <!-- //TITOLO -->
 
       <!-- BOX DATI CLIENTE -->
-      <div class="form-container">
+      <div class="container">
+        <!-- INPUT -->
+        <div class="data-input">
 
-        <div class="dati-imput">
-
+          <!-- INPUT DATI -->
           <div class="row">
-
+            <!-- NOME E COGNOME -->
             <div class="col">
-              <label for="nome">Nome e cognome</label>
-              <input id="nome" type="number" placeholder="Inserisci il tuo nome">
+              <label for="nome">Nome e Cognome</label>
+              <input id="nome" type="text" placeholder="Inserisci il tuo nome">
             </div>
+            <!-- //NOME E COGNOME -->
+
+            <!-- KM DA PERCORRERE -->
             <div class="col">
               <label for="km">km da percorrere</label>
-              <input id="km" type="text" placeholder="Inserisci i km">
+              <input id="km" type="number" placeholder="Inserisci i km">
             </div>
+            <!-- KM DA PERCORRERE -->
+
+            <!-- FASCIA DI ETA' -->
             <div class="col">
-              <label id="Fascia-eta">fascia di eta'</label>
+              <label id="eta">Fascia di eta'</label>
               <select id="fascia-eta" name="fascia-eta">
-                <option value="minorenne">minorenne</option>
-                <option value="maggiorenne">maggiorenne</option>
+                <option value="minorenne">Minorenne</option>
+                <option value="maggiorenne">Maggiorenne</option>
                 <option value="Over 65">Over 65</option>
               </select>
             </div>
-
+            <!-- //FASCIA DI ETA' -->
           </div>
+          <!--// INPUT DATI -->
+
+          <!-- BOTTONI  -->
+          <div class="row">
+            <button id="genera" class="btn" type="button" name="genera">Genera</button>
+            <button id="annulla" class="btn" type="button" name="annulla">Annulla</button>
+          </div>
+          <!-- // BOTTONI  -->
 
         </div>
-
-        <!-- BOTTONI  -->
-        <div class="row">
-          <button id="genera" class="btn" type="button" name="genera">Genera</button>
-          <button id="annulla" class="btn" type="button" name="annulla">Annulla</button>
-        </div>
-        <!-- // BOTTONI  -->
+        <!-- //INPUT -->
 
         <!-- STAMPA DEL BIGLIETTO -->
-        <h2>il tuo biglietto</h2>
-        <div id="biglietto-container" class="biglietto-container show">
-          <h3>dettaglio oasseggeri</h3>
-          <div class="nome-biglietto">
-            <h3>nome passeggero</h3>
-            <h4 id="nome-passeggero"></h4>
-          </div>
+        <section class="biglietto">
+          <h2>il tuo biglietto</h2>
+          <div id="biglietto-container" class="">
+            <h3>Dettaglio Passeggero</h3>
+            <div class="dati">
+              <!-- NOME PASSEGGERO -->
+              <div class="nome">
+                <h3>Nome Passeggero</h3>
+                <h4 id="nome-passeggero"></h4>
+              </div>
+              <!-- //NOME PASSEGGERO -->
 
-          <!-- TABELLA DATI BIT -->
-          <div class="offerta-biglietto">
-            <table>
-              <thead>
-                <tr>
-                  <th>offerta</th>
-                  <th>carrozza</th>
-                  <th>codice cp</th>
-                  <th>costo biglietto</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td id="offerta"></td>
-                  <td id="carrozza"></td>
-                  <td id="codice-cp"></td>
-                  <td id="costo"></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <!-- //TABELLA DATI BIT -->
+              <!-- TABELLA DATI BIT -->
+              <div class="offerta">
+                <table>
+                  <!-- INTESTAZIONI TAB -->
+                  <thead>
+                    <tr>
+                      <th>Offerta</th>
+                      <th>Carrozza</th>
+                      <th>Codice CP</th>
+                      <th>Costo Biglietto</th>
+                    </tr>
+                  </thead>
+                  <!-- //INTESTAZIONI TAB -->
+                  <!-- DATI TAB -->
+                  <tbody>
+                    <tr>
+                      <td id="offerta"></td>
+                      <td id="carrozza"></td>
+                      <td id="codice-cp"></td>
+                      <td id="costo"></td>
+                    </tr>
+                  </tbody>
+                  <!--// DATI TAB -->
+                </table>
+              </div>
+              <!-- //TABELLA DATI BIT -->
+            </div>
 
-        </div>
+          </div>
+        </section>
+        <!-- //STAMPA DEL BIGLIETTO -->
       </div>
       <!-- //BOX DATI CLIENTE -->
-
     </div>
     <!-- //FOGLIO DEL BIGLIETTO -->
 

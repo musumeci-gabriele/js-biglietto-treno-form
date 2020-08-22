@@ -24,15 +24,6 @@ else {
   document.getElementById("prezzo-bit").innerHTML = prezzo.toFixed(2);
 }
 
-
-
-
-
-
-
-
-
-
 totale = totale.toFixed(2);
 var numCarrozza = Math.floor(Math.random() * 9)+ 1;
 var codiceCp = Math.floor(Math.random() * 9999);

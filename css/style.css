@@ -9,14 +9,7 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
-
 /* mix */
-.container{
-  max-width: 1280px;
-  margin: auto;
-  padding: 20px 0;
-}
-
 h1, h2{
   color: #fff;
   background-color: inherit;
@@ -24,25 +17,32 @@ h1, h2{
   font-size: 30px;
   text-transform: uppercase;
 }
+.container{
+  max-width: 1280px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* BOTTONI */
 .btn{
   color: #B91450;
   font-size: 16px;
   font-weight: bold;
   padding: 3px;
-  background-color: yellow;
+  background-color: lightgrey;
   border-radius: 5px;
   border: 1px solid #999;
   cursor: pointer;
   margin: 10px 10px 0 10px;
 }
 .btn:hover{
-  background-color: grey;
-  color: #fff;
+  background-color: lightgrey;
+  color: white;
+  cursor: pointer;
 }
 .row{
   display: flex;
   justify-content:center;
-
 }
 .col{
   display: flex;
@@ -52,11 +52,11 @@ h1, h2{
 }
 
 /* dati imput */
-.dati-imput{
-  background-color: #fff;
+.data-input{
+  background-color: white;
   color: inherit;
   border-radius: 10px;
-  box-shadow: 2px 2px 5px #333;
+  box-shadow: 2px 2px 5px #444;
   padding: 20px;
   margin: 20px 0;
 }
@@ -70,34 +70,43 @@ input, select{
   border-radius: 5px;
   height: 30px;
   border: 1px solid #B91450;
+  font-size: 15px;
 }
 input::placeholder{
   text-align: center;
   font-size: 15px;
 }
-
 input:focus, select:focus{
   color: white;
   background-color: #B91450;
-  border:1px solid black;
 }
 
+/* STAMPA BIGLIETTO */
+.biglietto{
+  margin-top: 20px;
+}
 .biglietto-container{
   color: inherit;
   background-color: white;
+  padding: 20px;
   display: none;
+}
 
+
+.dati{
+  display: flex;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
 }
 .show{
   display: block;
 }
-.dati-biglietto{
-  display: flex;
-}
-
-.nome-biglietto{
+.nome{
   padding: 10px;
   flex-shrink: 0;
-  background-color: grey;
+  background-color: lightgrey;
   color: inherit;
+}
+.offerta table th, offerta table td{
+  padding: 20px;
 }
