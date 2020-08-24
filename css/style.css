@@ -85,22 +85,26 @@ input:focus, select:focus{
 .biglietto{
   margin-top: 20px;
 }
-
+.biglietto-container{
+  opacity: 0;
+  transition: opacity 0.5s;
+}
 
 .dati{
   display: flex;
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
 }
-.show{
-  display: block;
-}
+
 .nome{
   padding: 10px;
   flex-shrink: 0;
   background-color: lightgrey;
   color: inherit;
 }
-.offerta table th, offerta table td{
+.offerta table th, .offerta table td{
   padding: 20px;
+}
+.show{
+  opacity: 1;
 }

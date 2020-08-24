@@ -1,12 +1,12 @@
 // GENERA TICKET
-var btmGenera = document.getElementById("genera");
-
-btmGenera.addEventListner("click",
+var bottoneGenera = document.getElementById("genera");
+// PREMENDO IL BOTTONE GENERA  E COMPARE IL BIGLIETTO
+bottoneGenera.addEventListener("click",
   function(){
     // RECUPOERO DATI INSERITI DALL'UTENTE
     var nome = document.getElementById("nome").value;
     var km = document.getElementById("km").value;
-    var eta = document.getElementById("fascia-eta").value;
+    var fasciaEta = document.getElementById("fascia-eta").value;
     // value prende il valore dall'input
 
     // CALCOLO DEL PREZZO DEL BIT
@@ -14,7 +14,7 @@ btmGenera.addEventListner("click",
 
     // PREZZO TOTALE BIT STANDARD
     var totale = km * prezzoKm;
-    var topoOfferta = "Biglietto Standard";
+    var tipoOfferta = "Biglietto Standard";
 
     // SCONTO PER MINORENNI 20%
     if (fasciaEta =='minorenne'){
@@ -33,35 +33,23 @@ btmGenera.addEventListner("click",
     // GENERO I NUMERI RANDOM PER LA CARROZZA E I CODICI CP
     var numCarrozza = Math.floor(Math.random() * 9)+ 1;
     var codiceCp = Math.floor(Math.random() * 9999);
-    
+
     // STAMPA I DATI NEL BIGLIETTO
     document.getElementById("nome-passeggero").innerHTML = nome;
     document.getElementById("offerta").innerHTML = tipoOfferta;
-    document.getElementById("corrozza").innerHTML = carrozza;
-    document.getElementById("codice-cp").innerHTML = "9" + codice-cp;
+    document.getElementById("carrozza").innerHTML = numCarrozza;
+    document.getElementById("codice-cp").innerHTML = "9" + codiceCp;
     document.getElementById("costo").innerHTML = totale + "Euro";
-    document.getElementById("biglietto-container").classList.add = ("show");
 
-
-
-
+    document.getElementById("biglietto").classList.add("show");
   }
 );
 
-
-
-
-
-
-
-
-
-
-// RESET BOTTONE ANNULLA
-var annulla = document.getElementById("annulla");
-annulla.addEventListner("click",
+// PREMENDO IL BOTTONE ANNULLA RESET DATI E SCOMPARE IL BIGLIETTO
+var bottoneAnnulla = document.getElementById("annulla");
+bottoneAnnulla.addEventListener("click",
   function(){
-    documet.getElementById("biglietto-container").classList.remove("show")
+    documet.getElementById("biglietto").classList.remove("show")
 
     // RESETTARE I CAMPI input
     documet.getElementById("nome").value = "";
