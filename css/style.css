@@ -18,7 +18,7 @@ h1, h2{
   text-transform: uppercase;
 }
 .container{
-  max-width: 1280px;
+  max-width: 980px;
   margin: auto;
   padding: 20px 0;
 }
@@ -28,7 +28,7 @@ h1, h2{
   color: #B91450;
   font-size: 16px;
   font-weight: bold;
-  padding: 3px;
+  padding: 6px;
   background-color: lightgrey;
   border-radius: 5px;
   border: 1px solid #999;
@@ -71,6 +71,8 @@ input, select{
   height: 30px;
   border: 1px solid #B91450;
   font-size: 15px;
+  width: 150px;
+  margin-bottom: 20px;
 }
 input::placeholder{
   text-align: center;
@@ -94,16 +96,22 @@ input:focus, select:focus{
   display: flex;
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
+  margin-top: 10px;
 }
 
 .nome{
-  padding: 10px;
+  padding: 18px;
   flex-shrink: 0;
   background-color: lightgrey;
   color: inherit;
 }
+.nome h4{
+  margin-top: 38px;
+  font-size: 20px;
+}
 .offerta table th, .offerta table td{
   padding: 20px;
+  text-align: center;
 }
 .show{
   opacity: 1;
